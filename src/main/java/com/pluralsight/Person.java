@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+//? The Constructor
 public class Person {
     private String firstName;
     private String lastName;
@@ -10,6 +11,8 @@ public class Person {
         this.lastName = lastName;
         this.age = age;
     }
+
+    //* Getters and Setters
     public String getFirstName() {
         return firstName;
     }
@@ -32,5 +35,10 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " (" + age + ")";
     }
 }
